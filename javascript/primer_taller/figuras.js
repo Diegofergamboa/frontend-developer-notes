@@ -24,5 +24,34 @@ console.log(`El perímetro del cuadrado es ${perimetroTriangulo}`);
 
 console.groupEnd();
 
+// Código del círculo
 
+console.group("Circulos");
+
+//Radio
+
+const radioCirculo = 4 ;
+console.log(`El radio del circulo es ${radioCirculo}`);
+//Diametro
+
+const diametroCirculo = radioCirculo * 2;
+console.log(`El perímetro del cuadrado es ${diametroCirculo}`);
+
+//PI
+
+const PI = Math.PI;
+console.log(`PI es equivalente a ${PI}`);
+
+//Circunferencia
+
+const perimetroCirculo = diametroCirculo * PI ;
+console.log(`El perímetro del circulo es ${perimetroCirculo}`);
+
+//Àrea
+
+const areaCirculo = (radioCirculo * radioCirculo ) * PI ;
+console.log(`El área del cuadrado es ${areaCirculo}`);
+
+
+console.groupEnd();
 

@@ -32,7 +32,7 @@ function areaTriangulo (baseTriangulo, alturaTriangulo) {
 
 function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
     let c = 0 ;
-    c = ladoTriangulo1 + ladoTriangulo2 + baseTriángulo ; 
+    c = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo ; 
     return c
 }
 

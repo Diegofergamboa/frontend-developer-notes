@@ -1,3 +1,3 @@
 const ladoCuadrado = 5;
 
-console.log('los lados del cuadrado son: ' ladoCuadrado * 4);
+console.log('los lados del cuadrado son: ' + (ladoCuadrado * 4));

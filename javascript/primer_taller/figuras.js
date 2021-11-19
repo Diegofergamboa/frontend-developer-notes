@@ -51,27 +51,29 @@ console.groupEnd();
 
 //Diametro
 
-// function diametroCirculo (radio) {
-//     return radio * 2;
-// }
+function diametroCirculo (radio) {
+    return radio * 2;
+}
 
 // //PI
 
-// const PI = Math.PI;
+const PI = Math.PI;
+
 // console.log(`PI es equivalente a ${PI}`);
 
-// //Circunferencia
+//Circunferencia
 
 // const perimetroCirculo = diametroCirculo * PI ;
-// console.log(`El perímetro del circulo es ${perimetroCirculo}`);
 
-// //Àrea
-
+function perimetroCirculo(radio) {
+    const diametro = diametroCirculo(radio);
+    return (`El diametro del circulo es igual a ${diametro * PI}`);
+}
+//Àrea
 // const areaCirculo = (radioCirculo * radioCirculo ) * PI ;
-// console.log(`El área del cuadrado es ${areaCirculo}`);
-
-
-// console.groupEnd();
+function areaCirculo(radio) {
+    return (radio * radio ) * PI ;
+}
 
 // Prueba // 
 

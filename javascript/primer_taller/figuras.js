@@ -1,7 +1,3 @@
+const ladoCuadrado = 5;
 
-// function perimetro_cuadrado (lado) {
-    
-// }
-
-let cuadrado_lado = document.getElementById("lado");
-console.log(cuadrado_lado);
+console.log('los lados del cuadrado son: ' ladoCuadrado * 4);

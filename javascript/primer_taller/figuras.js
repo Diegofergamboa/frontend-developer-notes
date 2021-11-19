@@ -5,15 +5,15 @@ console.group("Cuadrado");
 // console.log('los lados del cuadrado son: ' + (ladoCuadrado * 4));
 
 function perimetroCuadrado(lado) {
-    return ladoCuadrado * 4;
+    return lado * 4;
 }
-perimetroCuadrado(10);
+// perimetroCuadrado(10);
 
 
 function areaCuadrado(lado) {
     return lado * lado;
 }
-areaCuadrado(156)
+// areaCuadrado(156)
 
 console.groupEnd();
 
@@ -21,17 +21,23 @@ console.groupEnd();
 
 console.group("Triángulos");
 
-const ladoTriangulo1 = 6 ;
-const ladoTriangulo2 = 6 ;
-const baseTriángulo = 4 ;
-const alturaTriángulo = 5 ;
+// const ladoTriangulo1 = 6 ;
+// const ladoTriangulo2 = 6 ;
+// const baseTriángulo = 4 ;
+// const alturaTriángulo = 5 ;
 
-console.log("Los lados de mi triángulo son "+ladoTriangulo1+" y, "+ladoTriangulo2+" la base es: "+baseTriángulo);
+function areaTriangulo (baseTriangulo, alturaTriangulo) {
+    return ( baseTriangulo * alturaTriangulo ) / 2 ;
+}
 
-const areaTriangulo = ( baseTriángulo * alturaTriángulo ) / 2 ;
-const perimetroTriangulo = ladoTriangulo1 + ladoTriangulo2 + baseTriángulo ;
-console.log(`El area del triangulo es ${areaTriangulo}`);
-console.log(`El perímetro del cuadrado es ${perimetroTriangulo}`);
+function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
+    let c = 0 ;
+    c = ladoTriangulo1 + ladoTriangulo2 + baseTriángulo ; 
+    return c
+}
+
+// console.log(`El area del triangulo es ${areaTriangulo}`);
+// console.log(`El perímetro del cuadrado es ${perimetroTriangulo}`);
 
 console.groupEnd();
 

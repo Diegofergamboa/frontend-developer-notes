@@ -23,12 +23,20 @@
         <h1>Figuras geométricas.</h1>
     </header>
     <section>
-        <h1>Perímetro de un cuadrado</h1>
-        <p>Lado</p>
-        <div class="cuadrado"></div>
-        <input type="text" name="" id="lado" placeholder="Valor del lado">
-        <input type="text" id="resultado" placeholder="Resultado">
-
+        <h2>Calcula el area y perimetro de un cuadrado</h2>
+        <form>
+            <label for="inputCuadrado">
+                Escribe cuanto mide cada lado de tu cuadrado
+            </label>
+            <input type="number"/>
+            <button id="inputCuadrado" type="button"></button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Cacular el perimetro
+            </button>
+            <button onclick="calcularAreaCuadrado()">
+                Calcular el área
+            </button>
+        </form>
     </section>
     <script src="/javascript/primer_taller/figuras.js"></script>
 </body>

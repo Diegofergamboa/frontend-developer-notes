@@ -2,13 +2,8 @@
 console.group("Cuadrado");
 
 function perimetroCuadrado(lado) {
-    const input = document.getElementById("InputCuadrado");
-    const value = input.value;
-    
-    const perimetro = perimetroCuadrado(value);
+    return lado * 4;
 }
-
-
 
 function areaCuadrado(lado) {
     return lado * lado;
@@ -59,6 +54,14 @@ function areaCirculo(radio) {
 //     return c * sum ;
 // }
 
-// Calcular perimetro cuadrado
+// Funciones con JS
 
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    debugger
+    const perimetro = perimetroCuadrado(value);
+    debugger
+    return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
+}
 

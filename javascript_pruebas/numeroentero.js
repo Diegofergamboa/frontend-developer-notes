@@ -3,13 +3,15 @@
 
 // 1. Tomar el valor de los enteros y colocarlos en una variable.
 // 2. Tomar el último dígito de cada una de las variables.
-// 3. Comparar los los últimos dígitos
+// 3. Comparar los últimos dígitos
 // 4. Printear cuál de las dos variables es la mayor yield, si son iguales printear ese result 
 
 // Declaración de variables.
 
 const num1 = 1567 ;
 const num2 = 14534 ;
+
+// Convierte a positivo
 
 const convertPositive = (a) => {
     if (a < 0) {
@@ -18,12 +20,18 @@ const convertPositive = (a) => {
         return a ;
     }
 }
-convertPositive(num1);
-convertPositive(num1);
+
+// Saca el último dígito
+
+function lastDigit(b) {
+    b = b / 10 ;
+    b = parseInt(b);
+    b = b * 10 ;
+    return b ;
+}
 
 
-
-const udnm1 = (num1) => {
-
-} 
-const udnm2 =
+function AlgoritmoPrincipal(z, x) {
+    z = lastDigit(convertPositive(num1));
+    x = lastDigit(convertPositive(num2));
+}

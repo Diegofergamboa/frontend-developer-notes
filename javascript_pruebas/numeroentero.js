@@ -8,11 +8,10 @@
 
 // Declaración de variables.
 
-const num1 = 1567 ;
-const num2 = 14534 ;
+// const num1 = 1567 ;
+// const num2 = 14534 ;
 
-// Convierte a positivo
-
+// Convierte a positivo.
 const convertPositive = (a) => {
     if (a < 0) {
         return a * (-1);
@@ -20,9 +19,7 @@ const convertPositive = (a) => {
         return a ;
     }
 }
-
-// Saca el último dígito
-
+// Saca el último dígito.
 function lastDigit(b) {
     b = b / 10 ;
     b = parseInt(b);
@@ -31,7 +28,17 @@ function lastDigit(b) {
 }
 
 
-function AlgoritmoPrincipal(z, x) {
-    z = lastDigit(convertPositive(num1));
-    x = lastDigit(convertPositive(num2));
+
+function algoritmoPrincipal(z, x) {
+    z = lastDigit(convertPositive(z));
+    x = lastDigit(convertPositive(x));
+    if (z > x) {
+        return (console.log(`${z} es mayor qué ${x}`));
+    } else if (x > z) {
+        return (console.log(`${x} es mayor qué ${z}`));
+    } else if (x === z) {
+        return (console.log(`Los numeros son iguales.`));
+    }
 }
+
+algoritmoPrincipal(156, 300);

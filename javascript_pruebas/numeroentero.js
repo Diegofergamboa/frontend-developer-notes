@@ -21,10 +21,11 @@ const convertPositive = (a) => {
 }
 // Saca el último dígito.
 function lastDigit(b) {
+    const real = b ;
     b = b / 10 ;
     b = parseInt(b);
     b = b * 10 ;
-    return b ;
+    return real - b;
 }
 
 
@@ -33,6 +34,7 @@ function algoritmoPrincipal(z, x) {
     z = lastDigit(convertPositive(z));
     x = lastDigit(convertPositive(x));
     if (z > x) {
+        debugger
         return (console.log(`${z} es mayor qué ${x}`));
     } else if (x > z) {
         return (console.log(`${x} es mayor qué ${z}`));
@@ -41,4 +43,4 @@ function algoritmoPrincipal(z, x) {
     }
 }
 
-algoritmoPrincipal(156, 300);
+algoritmoPrincipal(156, -309);

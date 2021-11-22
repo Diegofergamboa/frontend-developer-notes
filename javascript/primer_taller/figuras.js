@@ -65,17 +65,19 @@ function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
 
 
 function calcularPerimetroTriangulo() {
+    // Variables del set
     const input_primerlado = document.getElementById("primerlado");
     let value_primerlado = input_primerlado.value;
-    const input_primerlado = document.getElementById("segundolado");
+
+    const input_segundolado = document.getElementById("segundolado");
     let value_segundolado = input_segundolado.value;
+
     const input_base = document.getElementById("base");
     let value_base = input_base.value;
+
     const input_altura = document.getElementById("altura");
     let value_altura = input_altura.value;
 
-    return console.log(value_primerlado, value_segundolado, value_base, value_altura);
+    let area = areaTriangulo(input_base, input_altura);
+    return alert(`el perimetro del triangulo es ${area}`);
 }
-//primerlado
-//segundolado
-//base

@@ -1,22 +1,4 @@
-
-// function diametroCirculo (radio) {
-//     return radio * 2;
-// }
-
-// const PI = Math.PI;
-
-// function perimetroCirculo(radio) {
-//     const diametro = diametroCirculo(radio);
-//     return (`El diametro del circulo es igual a ${diametro * PI}`);
-// }
-// //Àrea
-// // const areaCirculo = (radioCirculo * radioCirculo ) * PI ;
-// function areaCirculo(radio) {
-//     return (radio * radio ) * PI ;
-// }
-
 // Código del cuadrado.
-
 // Funciones principales.
 
 function perimetroCuadrado(lado) {
@@ -52,17 +34,18 @@ function calcularAreaCuadrado() {
 // Funciones principales.
 
 function areaTriangulo (baseTriangulo, alturaTriangulo) {
+    debugger
     return ( baseTriangulo * alturaTriangulo ) / 2 ;
 }
 
 function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
-    let c = 0 ;
-    c = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo ; 
-    return c
+    function parseEntero (c){
+        return parseInt(c);
+    }
+    return (parseEntero(ladoTriangulo1) + parseEntero(ladoTriangulo2) + parseEntero(baseTriangulo)); 
 }
 
 // Funciones de calls en JS con Triángulo
-
 
 function calcularPerimetroTriangulo() {
     // Variables del set
@@ -75,9 +58,41 @@ function calcularPerimetroTriangulo() {
     const input_base = document.getElementById("base");
     let value_base = input_base.value;
 
+    //Output
+    let perimetro = perimetroTriangulo(value_primerlado, value_segundolado, value_base);
+    return alert(`el perimetro del triangulo es ${perimetro}`);
+}
+
+function calcularAreaTriangulo() {
+    //Variables
     const input_altura = document.getElementById("altura");
     let value_altura = input_altura.value;
 
-    let area = areaTriangulo(input_base, input_altura);
-    return alert(`el perimetro del triangulo es ${area}`);
+    const input_base = document.getElementById("base");
+    let value_base = input_base.value;
+
+    //Output
+    let area = areaTriangulo(value_base, value_altura);
+    return alert(`el área del triangulo es ${area}`);
+}
+
+
+// Código del triangulo.
+
+// Funciones principales.
+
+function diametroCirculo (radio) {
+    return radio * 2;
+}
+
+const PI = Math.PI;
+
+function perimetroCirculo(radio) {
+    const diametro = diametroCirculo(radio);
+    return (`El diametro del circulo es igual a ${diametro * PI}`);
+}
+//Àrea
+// const areaCirculo = (radioCirculo * radioCirculo ) * PI ;
+function areaCirculo(radio) {
+    return (radio * radio ) * PI ;
 }

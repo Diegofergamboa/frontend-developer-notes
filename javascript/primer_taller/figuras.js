@@ -80,6 +80,11 @@ function calcularAreaTriangulo() {
 // Código del triangulo.
 
 // Funciones principales.
+function setValue () {
+    inputRadio = document.getElementById("radio");
+    const valueRadio = inputRadio.value
+    return valueRadio;
+}
 
 const PI = Math.PI;
 
@@ -98,6 +103,20 @@ function areaCirculo(radio) {
 
 // Funciones de Calls en JS del Circulo
 
-calcularPerimetroCirculo()
-calcularAreaCirculo()
-calcularDiametroCirculo()
+function calcularPerimetroCirculo(){
+    let value = setValue();
+    let perimetro = perimetroCirculo(value);
+    return alert(`El perimetro del circulo es de ${perimetro}`);
+}
+
+function calcularAreaCirculo(){
+    let value = setValue();
+    let area = areaCirculo(value);
+    return alert(`El área del circulo es de ${area}`);
+}
+
+function calcularDiametroCirculo() {
+    let value = setValue();
+    let diametro = diametroCirculo(value);
+    return alert(`El diámetro del circulo es de ${diametro}`);
+}

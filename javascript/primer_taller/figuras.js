@@ -59,18 +59,19 @@ function areaCuadrado(lado) {
 
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("inputCuadrado");
-    const value = parseInt(input.value);
-    debugger    
-    const perimetro = perimetroCuadrado(value);
-    debugger
-    return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
+    let input_value = input.value;
+    console.log(input);
+    console.log(input_value);
+    // const perimetro = perimetroCuadrado(value);
+    
+    // return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
 }
 
-function calcularAreaCuadrado() {
-    const input = document.getElementById("inputCuadrado");
-    const value = input.value;
-    debugger
-    const perimetro = areaCuadrado(value);
-    debugger
-    return alert(`El valor del área del cuadrado con lado ${value} es de ${area}`);
-}
+// function calcularAreaCuadrado() {
+//     const input = document.getElementById("inputCuadrado");
+//     const value = input.value;
+//     debugger
+//     const perimetro = areaCuadrado(value);
+//     debugger
+//     return alert(`El valor del área del cuadrado con lado ${value} es de ${area}`);
+// }

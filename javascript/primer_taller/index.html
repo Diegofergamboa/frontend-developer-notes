@@ -37,9 +37,8 @@
             </label>
         </form>
     </section>
-    <script src="/javascript/primer_taller/figuras.js"></script>
     <section>
-        <h2>Calcula el diametro, perímetro y área de in circulo</h2>
+        <h2>Calcula el area y perimetro de un triangulo</h2>
         <form>
             <label for="input">
                 Medida del primer lado
@@ -62,5 +61,33 @@
             </label>
         </form>
     </section>
+    <section>
+        <h2>Calcula el área, perímetro y diametro de un circulo</h2>
+        <form>
+            <label for="input">
+                Medida del primer lado
+            <input id="primerlado" type="number"/>
+            <label for="input">
+                Medida del segundo lado
+            <input id="segundolado" type="number"/>
+            <label for="input">
+                Medida de la base del triangulo
+            <input id="base" type="number"/> <br>
+            <label for="input">
+                Medida de la altura del triangulo
+            <input id="altura" type="number"/> <br>    
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                Calcular el perímetro.
+            </button>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área.
+            </button>
+            <button type="button" onclick="calcularDiametroCirculo()">
+                Calcular el diametro.
+            </button>
+            </label>
+        </form>
+    </section>
+    <script src="/javascript/primer_taller/figuras.js"></script>
 </body>
 </html>

@@ -32,17 +32,6 @@ function areaCirculo(radio) {
     return (radio * radio ) * PI ;
 }
 
-// Prueba // 
-
-// function suma(a,b) {
-//     return a + b ;
-// }
-
-// function multiplicacion (c) {
-//     const sum = suma(1, 2);
-//     return c * sum ;
-// }
-
 // Código del cuadrado.
 
 // Funciones principales.
@@ -58,19 +47,19 @@ function areaCuadrado(lado) {
 // Funciones de calls on events en JS.
 
 function calcularPerimetroCuadrado() {
+    //Variables
     const input = document.getElementById("inputCuadrado");
     let input_value = input.value;
-
-    const perimetro = perimetroCuadrado(value);
-    console.log(perimetro);
-    // return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
+    const perimetro = perimetroCuadrado(input_value);
+    //Output
+    return alert(`El valor del perímetro del cuadrado con lado ${input_value} es de ${perimetro}`);
 }
 
-// function calcularAreaCuadrado() {
-//     const input = document.getElementById("inputCuadrado");
-//     const value = input.value;
-//     debugger
-//     const perimetro = areaCuadrado(value);
-//     debugger
-//     return alert(`El valor del área del cuadrado con lado ${value} es de ${area}`);
-// }
+function calcularAreaCuadrado() {
+    //Variables
+    const input = document.getElementById("inputCuadrado");
+    let input_value = input.value;
+    const area = areaCuadrado(input_value);
+    //Output
+    return alert(`El valor del área del cuadrado con lado ${input_value} es de ${area} metros cuadrados`);
+}

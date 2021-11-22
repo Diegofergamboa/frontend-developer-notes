@@ -81,18 +81,18 @@ function calcularAreaTriangulo() {
 
 // Funciones principales.
 
+const PI = Math.PI;
+
 function diametroCirculo (radio) {
     return radio * 2;
 }
-
-const PI = Math.PI;
 
 function perimetroCirculo(radio) {
     const diametro = diametroCirculo(radio);
     return (`El diametro del circulo es igual a ${diametro * PI}`);
 }
-//Àrea
-// const areaCirculo = (radioCirculo * radioCirculo ) * PI ;
+// Área
+
 function areaCirculo(radio) {
     return (radio * radio ) * PI ;
 }

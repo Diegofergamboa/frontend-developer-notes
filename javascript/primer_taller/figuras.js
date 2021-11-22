@@ -1,14 +1,3 @@
-// Código del cuadrado
-console.group("Cuadrado");
-
-function perimetroCuadrado(lado) {
-    return lado * 4;
-}
-
-function areaCuadrado(lado) {
-    return lado * lado;
-}
-
 
 console.groupEnd();
 
@@ -54,14 +43,34 @@ function areaCirculo(radio) {
 //     return c * sum ;
 // }
 
-// Funciones con JS
+// Código del cuadrado.
+
+// Funciones principales.
+
+function perimetroCuadrado(lado) {
+    return lado * 4;
+}
+
+function areaCuadrado(lado) {
+    return lado * lado;
+}
+
+// Funciones de calls on events en JS.
 
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("inputCuadrado");
     const value = input.value;
-    debugger
+    alert(value);
     const perimetro = perimetroCuadrado(value);
     debugger
     return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
 }
 
+function calcularAreaCuadrado() {
+    const input = document.getElementById("inputCuadrado");
+    const value = input.value;
+    debugger
+    const perimetro = areaCuadrado(value);
+    debugger
+    return alert(`El valor del área del cuadrado con lado ${value} es de ${area}`);
+}

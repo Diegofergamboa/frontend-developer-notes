@@ -60,10 +60,9 @@ function areaCuadrado(lado) {
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("inputCuadrado");
     let input_value = input.value;
-    console.log(input);
-    console.log(input_value);
-    // const perimetro = perimetroCuadrado(value);
-    
+
+    const perimetro = perimetroCuadrado(value);
+    console.log(perimetro);
     // return alert(`El valor del perimetro del cuadrado con lado ${value} es de ${perimetro}`);
 }
 

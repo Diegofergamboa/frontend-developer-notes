@@ -1,18 +1,6 @@
 
-console.groupEnd();
-
-console.group("Triángulos");
 
 
-function areaTriangulo (baseTriangulo, alturaTriangulo) {
-    return ( baseTriangulo * alturaTriangulo ) / 2 ;
-}
-
-function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
-    let c = 0 ;
-    c = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo ; 
-    return c
-}
 
 console.groupEnd();
 
@@ -62,4 +50,18 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(input_value);
     //Output
     return alert(`El valor del área del cuadrado con lado ${input_value} es de ${area} metros cuadrados`);
+}
+
+// Código del triangulo.
+
+// Funciones principales.
+
+function areaTriangulo (baseTriangulo, alturaTriangulo) {
+    return ( baseTriangulo * alturaTriangulo ) / 2 ;
+}
+
+function perimetroTriangulo (ladoTriangulo1, ladoTriangulo2, baseTriangulo) {
+    let c = 0 ;
+    c = ladoTriangulo1 + ladoTriangulo2 + baseTriangulo ; 
+    return c
 }

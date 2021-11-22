@@ -91,8 +91,13 @@ function perimetroCirculo(radio) {
     const diametro = diametroCirculo(radio);
     return (`El diametro del circulo es igual a ${diametro * PI}`);
 }
-// Área
 
 function areaCirculo(radio) {
     return (radio * radio ) * PI ;
 }
+
+// Funciones de Calls en JS del Circulo
+
+calcularPerimetroCirculo()
+calcularAreaCirculo()
+calcularDiametroCirculo()

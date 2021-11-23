@@ -96,10 +96,10 @@ function tipoTriangulo() {
             return alert('Es un triangulo isósceles');
         } else if ((value_segundolado == value_base) && (value_primerlado || value_segundolado  != value_primerlado)) {
             return  alert('Es un triangulo isósceles');
-        } else if ((value_primerlado == value_segundolado == value_base)) {
-            return alert('Es un triangulo equilatero');
+        // } else if ((value_primerlado == value_segundolado == value_base) && (value_base == value_primerlado)) {
+        //     return alert('Es un triangulo equilatero');
         } else {
-            return alert('El triángulo no es equilatero o isósceles');
+            return alert('El triángulo no es isósceles');
         }
 }
 

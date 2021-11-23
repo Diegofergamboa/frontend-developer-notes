@@ -76,8 +76,35 @@ function calcularAreaTriangulo() {
     return alert(`el área del triangulo es ${area}`);
 }
 
+// Especial reto 
 
-// Código del triangulo.
+function tipoTriangulo() {
+        // Variables del set
+        const input_primerlado = document.getElementById("primerlado");
+        let value_primerlado = input_primerlado.value;
+    
+        const input_segundolado = document.getElementById("segundolado");
+        let value_segundolado = input_segundolado.value;
+    
+        const input_base = document.getElementById("base");
+        let value_base = input_base.value;
+
+        // Algoritmo
+        if ((value_primerlado == value_segundolado) && (value_primerlado || value_base  != value_segundolado)) {
+            return alert('Es un triangulo isósceles');
+        } else if ((value_primerlado == value_base) && (value_primerlado || value_segundolado  != value_base)) {
+            return alert('Es un triangulo isósceles');
+        } else if ((value_segundolado == value_base) && (value_primerlado || value_segundolado  != value_primerlado)) {
+            return  alert('Es un triangulo isósceles');
+        } else if ((value_primerlado == value_segundolado == value_base)) {
+            return alert('Es un triangulo equilatero');
+        } else {
+            return alert('El triángulo no es equilatero o isósceles');
+        }
+}
+
+
+// Código del circulo.
 
 // Funciones principales.
 function setValue () {
@@ -120,3 +147,4 @@ function calcularDiametroCirculo() {
     let diametro = diametroCirculo(value);
     return alert(`El diámetro del circulo es de ${diametro}`);
 }
+

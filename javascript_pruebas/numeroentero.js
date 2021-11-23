@@ -34,7 +34,6 @@ function algoritmoPrincipal(z, x) {
     z = lastDigit(convertPositive(z));
     x = lastDigit(convertPositive(x));
     if (z > x) {
-        debugger
         return (console.log(`${z} es mayor qué ${x}`));
     } else if (x > z) {
         return (console.log(`${x} es mayor qué ${z}`));

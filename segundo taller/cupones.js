@@ -22,3 +22,11 @@ const cupones = [
         discount : 50
     }
 ]
+
+const cupon = 0 ;
+function setCupones(codigo) {
+    cupones.forEach(element => {
+        codigo === element ? cupon = element : null ; 
+    });
+    return cupon ;
+}

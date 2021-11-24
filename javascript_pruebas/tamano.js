@@ -1,11 +1,10 @@
-function length(a) {
-    while (a >= 0 || a <= 0) {
-        let contador = 0 ;
+function contador(a) {
+    while (a.length >= 0) {
+        let cd = 0 ;
+        cd = cd + 1;
         console.log(a);
-        a = a / 10
-        contador =+ 1;
-        console.log(contador);
+        a = a / 10 ;
+        console.log(cd);
     }
-    
 }
-length(1000);
+contador(100000);

@@ -9,5 +9,15 @@ function calcularPrecioConDescuento (precio, descuento) {
     return precioConDescuento;
 }
 
+function btnDiscount() {
+    // Calls
+    inputPrice = document.getElementById("inputPrice");
+    priceValue = inputPrice.value ;
+    inputDiscount = document.getElementById("inputDiscount");
+    discountValue = inputDiscount.value ;
 
+    const precioFinal = calcularPrecioConDescuento(priceValue, discountValue);
+    
+
+}
 

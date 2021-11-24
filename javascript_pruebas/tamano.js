@@ -1,10 +1,9 @@
+const a = 10000;
+const cd = 0;
 function contador(a) {
-    while (a.length >= 0) {
-        let cd = 0 ;
-        cd = cd + 1;
-        console.log(a);
+    while (a > 0) {
         a = a / 10 ;
-        console.log(cd);
+        cd = cd + 1 ;
     }
 }
 contador(100000);

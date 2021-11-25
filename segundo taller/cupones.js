@@ -26,7 +26,22 @@ const cupones = [
 const cupon = 0 ;
 function setCupones(codigo) {
     cupones.forEach(element => {
-        codigo === element ? cupon = element : null ; 
+        codigo === element ? true : null ; 
     });
-    return cupon ;
+}
+
+function cuponResult() {
+    //Variables
+    const inputCodigo = document.getElementById("inputCodigo");
+    // let cupon = document.getElementById("inputCupon");
+    codigo = inputCodigo.value;
+    //Condición
+    if (setCupones(codigo) == true) {
+        descuento = codigo.discount ;
+        alert(`Valor del descuento de ${descuento}`);
+    } else {
+        alert('Cupón no válido');
+    }
+    //Printeo
+    // outputCupon = cupon.innerText = "Descuento de " + descuento ;
 }

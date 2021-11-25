@@ -23,17 +23,15 @@ const cupones = [
     }
 ]
 
-// const cupon = 0 ;
+const cupon = 0 ;
 function setCupones() {
-    console.log(`dentro de set cupones`);
+    // Variables.
     const inputCodigo = document.getElementById("inputCodigo");
-    console.log(`dentro de set cupones con ${inputCodigo}`);
     let codigo = inputCodigo.value;
-    console.log(`dentro de set cupones con ${codigo}`);
+    //Algoritmo de set y arranque.
     switch (codigo) {
         case cupones[0].code :
             alert(`El descuento es de ${cupones[0].discount}%`);
-            debugger
             break;
         case cupones[1].code :
             alert(`El descuento es de ${cupones[1].discount}%`);
@@ -55,15 +53,5 @@ function setCupones() {
 
 
 function cuponResult() {
-    //Variables
-    const inputCodigo = document.getElementById("inputCodigo");
-    codigo = inputCodigo.value;
-    //Condición
-    setCupones(codigo);
-    debugger
-    if (setCupones(codigo) == true) {
-        alert(`Valor del descuento de ${descuento}`);
-    } else {
-        alert('Cupón no válido');
-    }
+
 }

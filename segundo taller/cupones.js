@@ -55,15 +55,18 @@ function setCupones() {
 
 
 function btnDiscount() {
+    // Fiabilidad del cupón
+    setCupones();
     // Variables.
     // let descuento = this.descuento;
     const inputPrice = document.getElementById("inputPrice");
     let valuePrice = inputPrice.value;
     //Algoritmo.
-    const porcentajePrecioConDescuento = 100 - descuento ;
+    const porcentajePrecioConDescuento = 100 - this.descuento ;
+    console.log(this.descuento);
     const precioConDescuento = (valuePrice * porcentajePrecioConDescuento) / 100 ;
     //Output.
+    debugger
     const result = document.getElementById("result");
-    let valueResult = result.value;
-    valueResult.innerHTML = "Precio con descuento de " + precioConDescuento ;
+    return result.innerHTML = "Precio con descuento de " + precioConDescuento;
 }

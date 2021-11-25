@@ -23,25 +23,47 @@ const cupones = [
     }
 ]
 
-const cupon = 0 ;
-function setCupones(codigo) {
-    cupones.forEach(element => {
-        codigo === element ? true : null ; 
-    });
+// const cupon = 0 ;
+function setCupones() {
+    console.log(`dentro de set cupones`);
+    const inputCodigo = document.getElementById("inputCodigo");
+    console.log(`dentro de set cupones con ${inputCodigo}`);
+    let codigo = inputCodigo.value;
+    console.log(`dentro de set cupones con ${codigo}`);
+    switch (codigo) {
+        case cupones[0].code :
+            alert(`El descuento es de ${cupones[0].discount}%`);
+            debugger
+            break;
+        case cupones[1].code :
+            alert(`El descuento es de ${cupones[1].discount}%`);
+            break;
+        case cupones[2].code :
+            alert(`El descuento es de ${cupones[2].discount}%`);
+            break;
+        case cupones[3].code :
+            alert(`El descuento es de ${cupones[3].discount}%`);
+            break;
+        case cupones[4].code :
+            alert(`El descuento es de ${cupones[4].discount}%`);
+            break;
+    } 
 }
+
+
+
+
 
 function cuponResult() {
     //Variables
     const inputCodigo = document.getElementById("inputCodigo");
-    // let cupon = document.getElementById("inputCupon");
     codigo = inputCodigo.value;
     //Condición
+    setCupones(codigo);
+    debugger
     if (setCupones(codigo) == true) {
-        descuento = codigo.discount ;
         alert(`Valor del descuento de ${descuento}`);
     } else {
         alert('Cupón no válido');
     }
-    //Printeo
-    // outputCupon = cupon.innerText = "Descuento de " + descuento ;
 }

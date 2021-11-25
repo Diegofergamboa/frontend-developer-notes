@@ -23,7 +23,7 @@ const cupones = [
     }
 ]
 
-const cupon = 0 ;
+let descuento = 0 ;
 function setCupones() {
     // Variables.
     const inputCodigo = document.getElementById("inputCodigo");
@@ -32,26 +32,44 @@ function setCupones() {
     switch (codigo) {
         case cupones[0].code :
             alert(`El descuento es de ${cupones[0].discount}%`);
+            descuento = cupones[0].discount;
             break;
         case cupones[1].code :
             alert(`El descuento es de ${cupones[1].discount}%`);
+            descuento = cupones[1].discount;
             break;
         case cupones[2].code :
             alert(`El descuento es de ${cupones[2].discount}%`);
+            descuento = cupones[2].discount;
             break;
         case cupones[3].code :
             alert(`El descuento es de ${cupones[3].discount}%`);
+            descuento = cupones[3].discount;
             break;
         case cupones[4].code :
             alert(`El descuento es de ${cupones[4].discount}%`);
+            descuento = cupones[4].discount;
             break;
     } 
 }
 
+function calcularPrecioConDescuento (precio, descuento) {
+    // const porcentajePrecioConDescuento = 100 - descuento ;
+    // const precioConDescuento = (precio * porcentajePrecioConDescuento) / 100 ;
 
 
+    // return precioConDescuento;
+}
 
+function btnDiscount() {
+    // Variables 
+    const inputPrice = document.getElementById("inputPrice");
+    let valuePrice = inputPrice.value;
+    const result = document.getElementById("result");
+    let valueResult = result.value;
 
-function cuponResult() {
+    //Algoritmo
+    const porcentajePrecioConDescuento = 100 - descuento ;
+
 
 }

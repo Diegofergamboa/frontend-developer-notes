@@ -1,6 +1,7 @@
-let mitadArray;
+
 
 function mitad (array) {
+    let mitadArray = 0;
     return mitadArray = parseInt(array.length / 2);
 }
 
@@ -12,16 +13,15 @@ function esPar(e) {
     }
 }
 
-let mediana = 0 ;
-
 function calculoMediana (array) {
-    let mediana = this.mediana;
+    debugger
+    let mediana = 0;
     if (esPar(array.length)) {
-        const elemento1 = array[mitadArray -1] ;
-        const elemento2 = array[mitadArray] ;
+        const elemento1 = mitad(array) -1 ;
+        const elemento2 = mitad(array) ;
         const promedio = (elemento1 + elemento2 ) / 2 ;
         return mediana = promedio;
     } else {
-        return mediana = array[mitadArray] ;
+        return mediana = array[mitad(array)] ;
     }
 }    

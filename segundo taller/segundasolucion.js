@@ -24,10 +24,13 @@ const cupones = [
 // Validación con el el array includes.
 
 function btnDiscount() {
-    if (!cupones.code.includes('ASDF01', 'ASDF02', 'ASDF03', 'ASDF04', 'ASDF05')) {
-        alert("Cupón no válido");
+    let inputCupon = document.getElementById("inputCodigo");
+    let cupon = inputCupon.value; debugger
+    if (!cupones.includes(cupon)) { 
+        alert(`El cupón ${cupon} no es válido`);
     } else {
-        findvalue();
+        alert(`Cupón ${cupon} correcto`);
+        findvalue();        
     }
 }
 

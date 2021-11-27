@@ -1,11 +1,3 @@
-const array1 = [
-    1,
-    2,
-    3,
-    5,
-    6
-];
-
 let mitadArray;
 
 function mitad (array) {
@@ -20,7 +12,7 @@ function esPar(e) {
     }
 }
 
-let mediana;
+let mediana = 0 ;
 
 function calculoMediana (array) {
     let mediana = this.mediana;
@@ -33,6 +25,3 @@ function calculoMediana (array) {
         return mediana = array[mitadArray] ;
     }
 }    
-
-
-calculoMediana(array1);

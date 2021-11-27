@@ -15,12 +15,21 @@ function esPar(e) {
 
 function calculoMediana (array) {
     let mediana = 0;
-    if (esPar(array.length)) {
-        const elemento1 = mitad(array) -1 ;
-        const elemento2 = mitad(array) ;
-        const promedio = (array[elemento1] + array[elemento2]) / 2 ;
-        return mediana = promedio;
-    } else {
-        return mediana = array[mitad(array)] ;
+    function solve (array) {
+        debugger
+        return array = array.sort();
     }
+    function comprobar (array) {
+        if (esPar(array.length)) {
+            const elemento1 = mitad(array) -1 ;
+            const elemento2 = mitad(array) ;
+            const promedio = (array[elemento1] + array[elemento2]) / 2 ;
+            return mediana = promedio;
+        } else {
+            return mediana = array[mitad(array)] ;
+        }
+    }
+    // ! Return f
+    return comprobar((solve(array)))
 }    
+
